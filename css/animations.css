@@ -162,7 +162,23 @@
 }
 
 .cloudflower3 {
+    animation: hovering 3s infinite linear;
+}
+
+.cplanetx {
     animation: hovering 6s infinite linear;
+}
+
+.iblueplantx {
+    animation: hovering 3s infinite linear;
+}
+
+.iorangeplantx {
+    animation: hovering 6s infinite linear;
+}
+
+.itreesx {
+    animation: tilting 3s infinite linear;
 }
 
 .spinny {
@@ -250,13 +266,52 @@
     animation: fadein 4s ease;
 }
 
+.iplanetx {
+    animation: hovering 8s infinite linear;
+    
+}
+
+.cplanetx {
+    animation: hovering 8s infinite linear;
+}
+
+.gplanetx {
+    animation: hovering 8s infinite linear;
+}
+
+
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
 
 
 
 
 
+@keyframes tilting {
+    0% {
+        transform:rotate(0deg)
+    }
+    33% {transform: rotate(25deg);
+    }
 
-
+    66% {
+        transform: rotate(-25deg);
+    }
+    
+    100% {
+        transform:rotate(0deg)
+    }
+}
 
 
 @keyframes jumping {
